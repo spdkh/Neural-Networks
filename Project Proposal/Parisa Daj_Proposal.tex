@@ -1,0 +1,72 @@
+%%
+%% Author: SPDKH (s.dajkhosh@memphis.edu)
+%% Reference: http://www.ctan.org/tex-archive/info/simplified-latex/
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[greek,english]{babel}
+\usepackage{alphabeta} 
+
+\usepackage[pdftex]{graphicx}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+\linespread{1.06}
+\setlength{\parskip}{8pt plus2pt minus2pt}
+
+\widowpenalty 10000
+\clubpenalty 10000
+
+\newcommand{\eat}[1]{}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\usepackage[official]{eurosym}
+\usepackage{enumitem}
+\setlist{nolistsep,noitemsep}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+\usepackage{lipsum}
+
+
+\begin{document}
+	
+	%===========================================================
+	\begin{titlepage}
+		\begin{center}
+			
+			% Top 
+			\includegraphics[width=0.55\textwidth]{figs/cslogo_horizontal.png}~\\[2cm]
+			
+			
+			% Title
+			\HRule \\[0.4cm]
+			{ \LARGE 
+				\textbf{COMP/EECE 8740 Neural Networks}\\[0.4cm]
+				\emph{Final Project Proposal}\\[0.4cm]
+				\emph{Deep Image Deblurring}\\[0.4cm]
+			}
+			\HRule \\[1.5cm]
+			
+			
+			
+			% Author
+			{ \large
+				S. Parisa Daj. \\[0.1cm]
+				Ph.D. student\\[0.1cm]
+				\texttt{s.dajkhosh@memphis.edu}
+			}
+			
+			\vfill
+			
+			
+			% Bottom
+			{\large \today}
+			
+		\end{center}
+	\end{titlepage}
+
+There are various challenges to solve in image restoration including dealing with low resolution, imaging in dim light, noise and blur. Machine learning is helping the scientists to solve these issues, \cite{Ozcan2019}. One of the challenges in this area is image deblurring.  According to too many environmental issues, the images have a level of blur. The task reflects how to get a sharper output image out of a blurred noisy input image, \cite{Li2020}. The blurring function model in some cases is known which leads us to non-blind image deblurring, \cite{Nan2020}. However, in some other cases, the noise model is unknown or partially known. In these scenarios, deep learning helps to understand the blurring model, \cite{Li2020}. The goal of this project is to apply a deep deblurring algorithm on a dataset presented in reference \cite{vem}.
+
+\nocite{*}
+\bibliographystyle{IEEEannot}
+\bibliography{bibfile}
+\end{document}
