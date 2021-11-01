@@ -4,7 +4,7 @@
 \documentclass[12pt,a4paper]{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage[greek,english]{babel}
+\usepackage[english]{babel}
 \usepackage{alphabeta} 
 
 \usepackage[pdftex]{graphicx}
@@ -64,8 +64,7 @@
 		\end{center}
 	\end{titlepage}
 
-There are various challenges to solve in image restoration including dealing with low resolution, imaging in dim light, noise and blur. Machine learning is helping the scientists to solve these issues, \cite{Ozcan2019}. One of the challenges in this area is low image resolution.  According to too many environmental issues, such as very small object size, etc. the images resolution is not satisfying enough. The task reflects how to get a sharper output image out of a blurred noisy input image, \cite{Li2020}. The blurring function model in some cases is known which leads us to non-blind image deblurring, \cite{Nan2020}. However, in some other cases, the noise model is unknown or partially known. In these scenarios, deep learning helps to understand the blurring model, \cite{Li2020}. The goal of this project is to apply a noisy blind deep deblurring algorithm on a dataset presented in reference \cite{vem}. For each image, a ground truth is available, besides a few blurred images. 
+Autism spectrum disorder is a condition related to brain development that impacts how a person perceives and socializes with others. Early diagnosis of autism disorder involves in-depth behavioral observation and testing, which can be time consuming, expensive, and affected by clinician diagnostic bias. Early diagnosis of ASD using non-behavioral measurements can lead to improved outcomes for children with ASD. We developed algorithms to classify ASD based on publicly available brain-imaging datasets (ABIDE), including functional-MRI brain scans from people with and without ASD diagnosis. Furthermore, the phenotypic data is also available for each patient which can help process the data with more details. Using a supervised deep neural network, the goal of this project is to classify pre-processed data from 200 regions of interest (atlas of craddock 200) into binary categories of ASD positive or negative. The challanges include finding an appropriate deep neural network and optimizing it, considering that data augmentation is not helpin in this task as we cannot change patients information. Therefore, the data samples are limited, and the model is prone to over-fitting. Thus, cross validation and batch normalization layers might be necessary for reaching a high validation accuracy.
 
-\bibliographystyle{IEEEtran}
-\bibliography{bibfile}
+
 \end{document}
